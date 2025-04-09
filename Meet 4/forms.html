@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML FORMS</title>
+		<meta name="author" content="Dinas">
+	</head>
+	
+	
+	<body>
+		<h2>HTML Forms</h2>
+		<form action="" method="GET">
+		
+		<fieldset>
+			<legend>Form Students</legend>
+			<table>
+				<tr>
+					<td width="30%"><label for="id_nama">Name  </label></td>
+					<td> :</td> 
+					<td><input type="text" name="nama" id="id_nama" required autofocus>	</td>
+				</tr>
+				
+				<tr>
+					<td><label>NIM </label></td>
+					<td> :</td> 
+					<td><input type="number" name="nim" required></td>
+				</tr>
+				
+				<tr>
+					<td><label>Password</label></td>
+					<td> :</td> 
+					<td><input type="password" name="password" required> </td>
+				</tr>
+				
+				<tr>	
+					<td><label>Email </label></td>
+					<td> :</td> 
+					<td><input type="email" name="email" required></td>
+				</tr>
+				
+				<tr>
+					<td><label>Birth Date </label></td>
+					<td> :</td> 
+					<td><input type="date" name="tanggal-lahir" required> </td>
+				</tr>
+				
+				<tr>
+					<td><label>Gender </label></td>
+					<td> :</td> 
+					<td><input type="radio" name="jk" value="M"> Man
+							<input type="radio" name="jk" value="WM"> Women</td>
+					<!-- type == "radio" untuk dipilih salah satunya saja
+					value= harus berbeda-->
+				</tr>
+				
+				<tr>
+					<td><label>Hobby </label></td>
+					<td> :</td> 
+					<td><input type="checkbox"	name="hobi" value="Membaca"> Membaca
+							<input type="checkbox"	name="hobi" value="rebahan"> Menulis
+							<input type="checkbox"	name="hobi" value="menonton"> Olahraga</td>
+				</tr>
+				
+				<tr>
+					<td><label>Upload Photo </label></td>
+					<td> :</td> 
+					<td><input type="file" name="foto" accept="image/*"></td>
+				</tr>
+				
+				<tr>
+					<td><label value = "">Prodi</label></td>
+					<td>:</td>
+					<td><select name ="prodi" required>
+						<option>Pilih Prodi</option>
+						<option>Teknik Komputer</option>
+						<option>Teknologi Rekayasa Perangkat Lunak</option>
+						<option>Sistem Informasi</option>
+						<option>Manajemen Informatika</option>
+						<option>Animasi</option>
+					</select></td>
+				</tr>
+				
+				<tr>
+					<td><label value = "">Country</label></td>
+					<td>:</td>
+					<td><select name ="prodi" required>
+						<option>Choose Country</option>
+						<option>Japan</option>
+						<option>Indonesia</option>
+						<option>Thailand</option>
+						<option>Philipines</option>
+						<option>Qatar</option>
+					</select></td>
+				</tr>
+				
+				<tr>
+					<td><label>Alamat Lengkap</label></td>
+					<td valign = "middle">:</td>
+					<td><textarea name = "alamat" rows = "10" cols = "60"></textarea></td>
+				</tr>
+				
+				<tr>
+					<td><label>Your Favorite Volor</label></td>
+					<td>:</td>
+					<td><input type = "color"></textarea></td>
+				</tr>
+				
+				<tr>
+					<td >
+					<input type="submit" value="SUBMITT">
+					<input type="reset" value="RESET">
+					</td>
+				</tr>
+			
+			</table>
+		</fieldset>
+	</form>
+	</body>
+</html>

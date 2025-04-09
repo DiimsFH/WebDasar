@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<!-- 07 - March - 2025,Friday 13.46 -->
+<!-- 13 - March - 2025, Thursday 8.37 Materi : CSS/COLORING -->
+<html>
+	<head>
+		<title>
+			Latihan Form
+		</title>
+		
+		<meta name = "author" content="Dimas Fachri Husaini">
+		
+		<style>
+			body
+				{ 
+					background-color :#c19d67;
+				}
+			h1
+				{ 	
+					text-align : center;
+					font-family: Cursive;
+					color :#5e4423 ;
+					font-style : italic;
+					font-weight: bold;
+					font-size: 50px;
+				}
+			td
+				{ 
+					color :#fee8ac;
+				}
+			input[type="text"],[type="date"],[type="tel"],[type="email"]
+				{
+					border-radius:15px;
+					background-color:#fee8ac;
+					color:#5e4423;
+					padding:10px;
+					width:90%;
+				}
+			::placeholder
+				{
+					color:#5e4423;
+				}
+			input[type="submit"],[type="reset"],[type="file"]
+				{
+					background-color:#fee8ac;
+					border-radius:15px;
+				}
+			textarea
+				{
+					background-color:#fee8ac;
+					border-radius:15px;
+				}
+			select
+				{
+					background-color:#fee8ac;
+					border-radius:15px;
+					padding:10px;
+					width:90%;
+				}
+			textarea:hover 
+				{
+					background-color: #d7b397;
+				}
+			input:hover 
+				{
+					background-color: #d7b397;
+				}
+		</style>
+		
+	</head>
+	<body>
+		<h1 > Form Pendaftaran </h1>
+			<form>
+				<table  width = "100%">		
+					<tr>
+						<td width = "50%" valign = "top">
+							<fieldset> 
+								<legend><h2>Data Pribadi</h2></legend>
+									<table cellpadding = "5">
+										<tr>
+											<td>
+											<label>Nama Lengkap</label></td>
+											<td> :</td> 
+											<td><input placeholder = "Nama Lengkap" type="text" name="nim" required></td>
+										</tr>					
+										<tr>
+											<td>
+											<label>Email</label></td>
+											<td> :</td> 								
+											<td><input type="email" name="email" required></td>
+										</tr>
+										<tr>
+										</tr>
+										<tr>
+											<td>
+											<label>Nomor Telepon</label></td>
+											<td> :</td> 							
+											<td><input type="tel" name="telepon" required></td>
+										</tr>
+										<tr>
+										</tr>
+										<tr>
+											<td>
+											<label>Alamat Lengkap</label></td>
+											<td valign = "middle">:</td>					
+											<td><textarea name = "alamat" rows = "7" cols = "30"></textarea></td>
+										</tr>
+										<tr>
+										</tr>
+										<tr>
+											<td>
+											<label>Tanggal Lahir </label></td>
+											<td> :</td> 				
+											<td><input type="date" name="tanggal-lahir" required> </td>
+										</tr>
+										
+										<tr>
+											<td>
+											<label>Jenis Kelamin </label></td>
+											<td> :</td> 				
+											<td><input type="radio" name="jk" value="M"> Laki-Laki
+												<input type="radio" name="jk" value="WM"> Perempuan</td>
+										</tr>
+										<tr>
+										</tr>
+										<tr>
+											<td>
+											<label value = "">Agama</label></td>
+											<td>:</td>		
+											<td><select name ="agama" required>
+												<option>Pilih Agama</option>  
+												<option>Kristen Protestan</option>
+												<option>Kristen Catholic</option>
+												<option>Hindu</option>
+												<option>Islam</option>
+												<option>Budha</option>
+											</select></td>
+										</tr>
+										<tr>
+										</tr>
+										<tr>
+											<td>
+											<label>Pendidikan Terakhir</label></td>
+											<td>:</td>			
+											<td><input type ="radio" name = "PT"> SMA 
+												<input type ="radio" name = "PT">D3
+												<input type ="radio" name = "PT"> S1
+												</td>
+										</tr>
+										<tr>
+										</tr>
+										<tr>
+											<td>
+											<label>Foto</label></td>
+											<td>:</td>
+											<td><input type="file" name="foto" accept="image/*"></td>			 			  
+										</tr>
+										<tr>
+										</tr>
+										<tr>
+											<td>
+											<label>CV</label></td>
+											<td>:</td>			
+											<td><input type="file" name="foto" accept=".pdf"></td>
+										</tr>
+										
+									</table>
+							</fieldset>
+						</td>
+						<td valign = "top">
+							<fieldset>
+								<legend><h2>Data Orang Tua</h2></legend>
+									<table cellpadding = "5">
+										<tr>
+											<td>
+											<label>Nama Ayah </label></td>
+											<td> : </td> 
+											<td><input type="text" name="ayah" required><br></td>
+										</tr>	
+										<tr>
+										</tr>
+										<tr>
+											<td>
+											<label>Pekerjaan Ayah</label></td>
+											<td> :</td> 			
+											<td><input type="text" name="PA" required></td>
+										</tr>	
+										<tr>
+										</tr>
+										<tr>
+											<td>
+											<label>Alamat Ayah</label></td>	
+											<td> :</td> 									
+											<td><textarea name = "aa" rows = "3" cols = "22"></textarea></td>
+										</tr>
+										<tr>
+										</tr>
+										<tr>
+											<td>
+											<label>Nomor Telepon Ayah</label></td>
+											<td> :</td> 				
+											<td><input type="tel" name="ta" required></td>
+										</tr>
+										<tr>
+										</tr>
+										<tr>
+											<td>
+											<label>Nama Ibu </label></td>
+											<td> :</td>		
+											<td><input type="text" name="ibu" required></td>
+										</tr>	
+										<tr>
+										</tr>
+										<tr>
+											<td>
+											<label>Pekerjaan Ibu</label></td>
+											<td> :</td> 					
+											<td><input type="text" name="PI" required></td>
+										</tr>	
+										<tr>
+										</tr>
+										<tr>
+											<td>
+											<label>Alamat Ibu</label></td>
+											<td valign = "middle">:</td>			
+											<td><textarea name = "ai" rows = "3" cols = "22"></textarea></td>
+										</tr>
+										<tr>
+										</tr>	
+										<tr>
+											<td>
+											<label>Nomor Telepon Ibu</label></td>
+											<td> :</td> 							
+											<td><input type="tel" name="ti" required></td>
+										</tr>
+										<tr>
+										</tr>
+										<tr>
+											<td>
+											<input type="submit" value="Submit">
+											<input type="reset" value="Reset">
+											</td>
+										</tr>
+									</table>
+								</fieldset>
+							<br>
+						<br>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

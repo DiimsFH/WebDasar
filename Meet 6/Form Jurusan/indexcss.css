@@ -1,0 +1,68 @@
+	
+	
+	
+	
+	body{
+		 font-family: "Sour Gummy", sans-serif;
+		 font-size:24px;
+		}
+	a{
+		color:#6C4E31;
+		text-decoration:none;
+		
+		}
+	a:hover{
+		color:white;
+		}
+	.head{									
+		background-color:#706D54;
+		padding:30px;
+		text-align:center;
+		font-size:2em;
+		}
+			h3{
+				font-size:18px;
+				text-align:left;
+				margin-left:10px;
+				color:#DBDBDB;
+				}
+			h2{				
+				font-size:15px;
+				text-align:left;
+				margin-left:10px;
+				}
+			h1{
+				font-size:22px;
+				text-align:left;
+				margin-left:10px;
+				color:#FFEAC5;
+				}
+			p{
+				margin-left:10px;
+				}
+	
+	.isi{
+		font-size:12px;
+		}
+	
+	.main{									
+		background-color:#C9B194;
+		height:300px;	
+		width:80%;
+		float:left;
+			}
+	.sidebar{									
+		background-color:#A08963;	
+		width:20%;
+		height:300px;
+		float:left;
+			}
+	.footer{									
+		background-color:#706D54;	
+		padding:15px;
+		clear:both;
+		text-align:center;
+		}
+	.white-center{
+		color:white;
+		}

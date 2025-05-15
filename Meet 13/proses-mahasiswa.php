@@ -20,7 +20,7 @@
     //insert data dengan statement prepare
         $sql = "INSERT INTO tabel_mahasiswa (nim, nama, email, alamat) VALUES (?, ?, ?, ?)";
         $query_prepare = $koneksi->prepare($sql);
-        $query_prepare->bind_param("ssss", $nim, $nama, $email, $alamat);
+        $query_prepare->bind_param("isss", $nim, $nama, $email, $alamat);
 
         if($query_prepare->execute()) {
             echo "Data mahasiswa berhasil disimpan";

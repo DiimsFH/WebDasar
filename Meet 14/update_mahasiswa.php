@@ -9,23 +9,31 @@
   <body>
     <div class="container">
         <h1>Form Edit Mahasiswa</h1>
+        <?php>
+          include 'koneksi.php';  
+          $id = $_GET['id'];
+          $mahasiswa = $koneksi->query['SELECT * FROM tabel_mahasiswa WHERE id = $id']
+          $row = mahasiswa->fetch_assoc();
+       ?>
         <a href ="data_mahasiswa2.php" class = "btn btn-success btn-sm" >Data Mahasiswa</a>
         <form action="proses-mahasiswa.php" method="POST">
             <div class="mb-3">
                 <label for="nim" class="form-label">NIM</label>
-                <input type="number" class="form-control" id="nim" name="nim" required>
+                <input value ="$row['nim']" type="number" class="form-control" id="nim" name="nim" required>
             </div>
             <div class="mb-3">
                 <label for="nama" class="form-label">Nama</label>
-                <input type="text" class="form-control" id="nama" name="nama" required>
+                <input value ="$row['nama']" type="text" class="form-control" id="nama" name="nama" required>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" required>
+                <input value ="$row['email']" type="email" class="form-control" id="email" name="email" required>
             </div>
             <div class="mb-3">
                 <label for="alamat" class="form-label">alamat</label>
-                <textarea class="form-control" id="alamat" name="alamat" rows="3"></textarea>
+                  <textarea class="form-control" id="alamat" name="alamat" rows="3">
+                    <?=$row['alamat'];
+                  </textarea>
             </div>
             <input class="btn btn-danger" type="submit" name="submit"></input>
     </div>
